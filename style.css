@@ -1,0 +1,156 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    border: 2px solid black;
+    /* Simplificado */
+    width: 80%;
+    /* Aumentado para mejor visualización */
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    /* Añadido para espacio interno */
+}
+
+header {
+    text-align: center;
+    background-color: aquamarine;
+    padding: 10px;
+    /* Añadido para espacio interno */
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100px;
+    height: 100;
+    object-fit: cover;
+}
+
+#opinion1 {
+    display: flex;
+    gap: 20px;
+    /* Espacio entre las secciones */
+    justify-content: center;
+    /* Centrar las secciones */
+    align-items: stretch;
+    /* Asegura que ambas secciones tengan la misma altura */
+    padding: 20px;
+    /* Espacio interno */
+    border: 2px solid black;
+   
+}
+
+.seccion1 {
+    flex: 1;
+    /* Ambas secciones ocupan el mismo espacio */
+    display: flex;
+    flex-direction: column;
+    /* Alinear elementos verticalmente */
+    align-items: center;
+    /* Centrar horizontalmente */
+    padding: 20px;
+
+    text-align: center;
+    background-color: #fff;
+    min-height: 100%;
+    /* Asegura que ambas secciones tengan la misma altura */
+}
+
+.imagen-circulo {
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    /* Espacio debajo de la imagen */
+}
+
+.textFondo {
+    border-radius: 20px;
+    background-color: black;
+    color: beige;
+    padding: 10px;
+    margin: 10px 0;
+    /* Espacio externo */
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    flex-grow: 1;
+    /* Hace que el texto ocupe el espacio restante */
+}
+
+h2,
+h3 {
+    margin:  0;
+    /* Espacio entre los textos */
+    width: 100%;
+    /* Asegura que ocupen todo el ancho */
+}
+
+
+ /* -------------------segunda seccion-------------------- */
+ #opinion2 {
+    display: flex;
+    gap: 20px; /* Espacio entre las secciones */
+    justify-content: center; /* Centrar las secciones */
+    align-items: stretch; /* Asegura que ambas secciones tengan la misma altura */
+    padding: 20px; /* Espacio interno */
+    border: 2px solid black; /* Borde del contenedor */
+}
+
+.seccion2 {
+    flex: 1; /* Ambas secciones ocupan el mismo espacio */
+    display: flex;
+    flex-direction: column; /* Alinear elementos verticalmente */
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+.textFondo1 {
+    color: black;
+    padding: 10px;
+    margin: 10px 0; /* Espacio externo */
+    width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+.contenido-inferior {
+    margin-left: 20px;
+    display: flex;
+    align-items: center; /* Alinear imagen y texto verticalmente */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+    margin-top: 15px; /* Espacio arriba del contenido inferior */
+}
+
+.imagen-circulo {
+    width: 100px; /* Tamaño de la imagen */
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info-persona {
+    text-align: left; /* Alinear el texto a la izquierda */
+}
+
+.info-persona h2,
+.info-persona h3 {
+    margin: 5px 0; /* Espacio entre el nombre y la descripción */
+}
+
+
+/* ----------------------opinion 3---------------------- */
+
+
+#opinion3 {
+    border: 2px solid black; /* Borde del contenedor */
+    display: flex;
+    flex-direction: column;
+}
+
