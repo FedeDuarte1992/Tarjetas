@@ -244,12 +244,12 @@ align-items:center ;
 
 /* Mostrar la primera declaración por defecto */
 #tolkien {
-    display: block;
+    display: none;
 }
 
 /* Mostrar la declaración activa usando :target */
 .declaracion:target {
-    display: none;
+    display: block;
 }
 
 /* Ocultar la declaración no activa */
