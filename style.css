@@ -237,19 +237,22 @@ align-items:center ;
     padding: 20px;
     position: relative; /* Necesario para posicionar las declaraciones */
 }
+/* Si hay un target activo, oculta Tolkien */
+#opinion4:has(.declaracion:target) #tolkien {
+    display: none;
+}
 
 /* Ocultar todas las declaraciones por defecto */
-/* Estilos para las declaraciones */
 .declaracion {
     display: none;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px; /* Espaciado interno */
-    border: 2px solid black; /* Borde agregado */
-    border-radius: 20px; /* Bordes redondeados */
-    background-color: white; /* Fondo para mayor visibilidad */
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: white;
 }
 
 
