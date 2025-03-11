@@ -232,24 +232,30 @@ align-items:center ;
 
 /* Estilos para el contenedor */
 #opinion4 {
-    border: 2px solid black;
+   
     border-radius: 30px;
     padding: 20px;
     position: relative; /* Necesario para posicionar las declaraciones */
 }
 
 /* Ocultar todas las declaraciones por defecto */
+/* Estilos para las declaraciones */
 .declaracion {
     display: none;
-    position: absolute; /* Posiciona las declaraciones una encima de la otra */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    padding: 20px; /* Espaciado interno */
+    border: 2px solid black; /* Borde agregado */
+    border-radius: 20px; /* Bordes redondeados */
+    background-color: white; /* Fondo para mayor visibilidad */
 }
+
 
 /* Mostrar la primera declaración por defecto */
 #tolkien {
-    display: none;
+    display: block; /* Cambio importante: ahora se muestra por defecto */
 }
 
 /* Mostrar la declaración activa usando :target */
@@ -257,8 +263,8 @@ align-items:center ;
     display: block;
 }
 
-/* Ocultar la declaración no activa */
-#opinion4 > .declaracion:not(:target) {
+/* Ocultar la otra declaración cuando una está activa */
+#opinion4 .declaracion:not(:target) {
     display: none;
 }
 
