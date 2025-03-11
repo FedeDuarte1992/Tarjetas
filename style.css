@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
-    border: 2px solid black;
+    
     /* Simplificado */
     width: 80%;
     /* Aumentado para mejor visualización */
@@ -14,7 +14,7 @@ body {
 
 header {
     text-align: center;
-    background-color: aquamarine;
+
     padding: 10px;
     /* Añadido para espacio interno */
 }
@@ -42,7 +42,8 @@ img {
     padding: 20px;
     /* Espacio interno */
     border: 2px solid black;
-   
+    border-radius: 30px;
+
 }
 
 .seccion1 {
@@ -62,7 +63,7 @@ img {
 }
 
 .imagen-circulo {
-    width:100px;
+    width: 100px;
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
@@ -85,72 +86,175 @@ img {
 
 h2,
 h3 {
-    margin:  0;
+    margin: 0;
     /* Espacio entre los textos */
     width: 100%;
     /* Asegura que ocupen todo el ancho */
 }
 
 
- /* -------------------segunda seccion-------------------- */
- #opinion2 {
+/* -------------------segunda seccion-------------------- */
+#opinion2 {
     display: flex;
-    gap: 20px; /* Espacio entre las secciones */
-    justify-content: center; /* Centrar las secciones */
-    align-items: stretch; /* Asegura que ambas secciones tengan la misma altura */
-    padding: 20px; /* Espacio interno */
-    border: 2px solid black; /* Borde del contenedor */
+    gap: 20px;
+    /* Espacio entre las secciones */
+    justify-content: center;
+    /* Centrar las secciones */
+    align-items: stretch;
+    /* Asegura que ambas secciones tengan la misma altura */
+    padding: 20px;
+    /* Espacio interno */
+   
 }
 
 .seccion2 {
-    flex: 1; /* Ambas secciones ocupan el mismo espacio */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    flex: 1;
+    /* Ambas secciones ocupan el mismo espacio */
     display: flex;
-    flex-direction: column; /* Alinear elementos verticalmente */
+    flex-direction: column;
+    /* Alinear elementos verticalmente */
     padding: 20px;
     text-align: center;
     background-color: #fff;
-    border: 2px solid black;
+   
     border-radius: 30px;
 }
 
 .textFondo1 {
     color: black;
     padding: 10px;
-    margin: 10px 0; /* Espacio externo */
-    width: 100%; /* Ocupa todo el ancho disponible */
+    margin: 10px 0;
+    /* Espacio externo */
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
 }
 
 .contenido-inferior {
     margin-left: 20px;
     display: flex;
-    align-items: center; /* Alinear imagen y texto verticalmente */
-    gap: 20px; /* Espacio entre la imagen y el texto */
-    margin-top: 15px; /* Espacio arriba del contenido inferior */
+    align-items: center;
+    /* Alinear imagen y texto verticalmente */
+    gap: 20px;
+    /* Espacio entre la imagen y el texto */
+    margin-top: 15px;
+    /* Espacio arriba del contenido inferior */
 }
 
 .imagen-circulo {
-    width: 100px; /* Tamaño de la imagen */
+    width: 100px;
+    /* Tamaño de la imagen */
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
 }
 
 .info-persona {
-    text-align: left; /* Alinear el texto a la izquierda */
+    text-align: left;
+    /* Alinear el texto a la izquierda */
 }
 
 .info-persona h2,
 .info-persona h3 {
-    margin: 5px 0; /* Espacio entre el nombre y la descripción */
+    margin: 5px 0;
+    /* Espacio entre el nombre y la descripción */
 }
 
 
-/* ----------------------opinion 3---------------------- */
+/* -------------------tercera seccion-------------------- */
 
 
 #opinion3 {
-    border: 2px solid black; /* Borde del contenedor */
     display: flex;
+    gap: 20px;
+    /* Espacio entre las secciones */
+    justify-content: center;
+    /* Centrar las secciones */
+    align-items: stretch;
+    /* Asegura que ambas secciones tengan la misma altura */
+    padding: 20px;
+    /* Espacio interno */
+   
+    /* Borde del contenedor */
+    flex-wrap: nowrap;
     flex-direction: column;
 }
 
+.imagenRectangular {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 30px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.textos {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: #333333da;
+    color: white;
+    border-radius: 30px;
+}
+
+.textos h1 {
+    color: black;
+}
+
+.textos h2 {
+    color: #333;
+    margin-bottom: 2%;
+}
+
+.textos h3 {
+    margin: auto;
+width: 90%;
+align-items:center ;
+    text-align: center;
+}
+
+.fotoYopinion {
+    
+    display: flex;
+    gap: 20px;
+    /* Espacio entre las secciones */
+    justify-content: center;
+    /* Centrar las secciones */
+    align-items: stretch;
+    /* Asegura que ambas secciones tengan la misma altura */
+    padding: 20px;
+    /* Espacio interno */
+
+
+
+}
+
+
+/* -------------------Cuarta seccion-------------------- */
+
+#opinion4{
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+/* Ocultar todas las declaraciones por defecto */
+.declaracion {
+    display: none;
+}
+
+/* Mostrar la declaración activa usando :target */
+.declaracion:target {
+    display: block;
+}
+
+/* Estilos para las flechas */
+.flecha {
+    font-size: 24px;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+.declaracion h3{
+    margin: auto;
+    width: 90%;
+    align-items:center ;
+        text-align: center;
+}
