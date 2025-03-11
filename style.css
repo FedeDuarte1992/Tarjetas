@@ -230,9 +230,11 @@ align-items:center ;
 
 /* -------------------Cuarta seccion-------------------- */
 
-#opinion4{
+/* Estilos para el contenedor */
+#opinion4 {
     border: 2px solid black;
     border-radius: 30px;
+    padding: 20px;
 }
 
 /* Ocultar todas las declaraciones por defecto */
@@ -240,9 +242,19 @@ align-items:center ;
     display: none;
 }
 
+/* Mostrar la primera declaración por defecto */
+#opinion4 > #tolkien {
+    display: block;
+}
+
 /* Mostrar la declaración activa usando :target */
 .declaracion:target {
     display: block;
+}
+
+/* Ocultar la declaración por defecto cuando otra está activa */
+.declaracion:target ~ #tolkien {
+    display: none;
 }
 
 /* Estilos para las flechas */
@@ -252,9 +264,9 @@ align-items:center ;
     color: #000;
     cursor: pointer;
 }
-.declaracion h3{
+
+.declaracion h3 {
     margin: auto;
     width: 90%;
-    align-items:center ;
-        text-align: center;
+    text-align: center;
 }
