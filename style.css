@@ -249,7 +249,7 @@ align-items:center ;
 
 /* Mostrar la declaración activa usando :target */
 .declaracion:target {
-    display: block;
+    display: none;
 }
 
 /* Ocultar la declaración no activa */
