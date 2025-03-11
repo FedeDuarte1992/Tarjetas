@@ -243,7 +243,7 @@ align-items:center ;
 }
 
 /* Mostrar la primera declaración por defecto */
-#opinion4 > #tolkien {
+#tolkien {
     display: block;
 }
 
@@ -252,8 +252,8 @@ align-items:center ;
     display: block;
 }
 
-/* Ocultar la declaración por defecto cuando otra está activa */
-.declaracion:target ~ #tolkien {
+/* Ocultar la declaración no activa */
+.declaracion:not(:target) {
     display: none;
 }
 
