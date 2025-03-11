@@ -235,11 +235,16 @@ align-items:center ;
     border: 2px solid black;
     border-radius: 30px;
     padding: 20px;
+    position: relative; /* Necesario para posicionar las declaraciones */
 }
 
 /* Ocultar todas las declaraciones por defecto */
 .declaracion {
     display: none;
+    position: absolute; /* Posiciona las declaraciones una encima de la otra */
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 /* Mostrar la primera declaración por defecto */
@@ -253,7 +258,7 @@ align-items:center ;
 }
 
 /* Ocultar la declaración no activa */
-.declaracion:not(:target) {
+#opinion4 > .declaracion:not(:target) {
     display: none;
 }
 
